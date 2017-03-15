@@ -60,7 +60,7 @@ def getMorpheme(lang, key=None):
     while True:
         n = random.randrange(len(items) + extras)
 
-        if n in items:
+        if len(items) > n:
             return items[n]
 
         morph = makeSyllable(lang)
